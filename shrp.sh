@@ -12,6 +12,7 @@ $SHRP_FONP_3=$(SHRP_FLASH_ON_PATH_3)
 $SHRP_FOFP_1=$(SHRP_FLASH_OFF_PATH_1)
 $SHRP_FOFP_2=$(SHRP_FLASH_OFF_PATH_2)
 $SHRP_FOFP_3=$(SHRP_FLASH_OFF_PATH_3)
+$SHRP_REC=$(SHRP_RECOVERY_PATH)
 
 
 
@@ -66,4 +67,8 @@ $SHRP_FOFP_3
 		</template>
 	</templates>
 </recovery>
+EOF
+
+cat > shrp_vital.xml <<EOF
+ro.shrp.recovery.block=$SHRP_REC
 EOF
