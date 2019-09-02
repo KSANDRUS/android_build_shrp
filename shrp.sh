@@ -72,3 +72,61 @@ EOF
 cat > shrp_vital.xml <<EOF
 ro.shrp.recovery.block=$SHRP_REC
 EOF
+
+cat > updater-script <<EOF
+show_progress(1.000000, 0);
+ui_print("                                            _ _ __");
+ui_print("   __ __ __  _ __ _  __ _            __   /_ _   /");
+ui_print("  / _ _// / / / __ \/ __ \   __     / /   _ __/ / ");
+ui_print("  \__ \/ /_/ / /_/ / /_/ /   \ \   / /  / _ _ _/  ");
+ui_print(" ___/ / __  / _, _/ ____/     \ \_/ /  / /_ _     ");
+ui_print("/__ _/_/ /_/_/ |_/_/           \__ /  /__ __/     ");
+ui_print("                                                  ");
+ui_print("                                                  ");
+ui_print("                                                  ");
+sleep(2);
+ui_print("Skyhawk Recovery Project                          ");
+ui_print("--------------------------------------------------");
+ui_print("Details-                                          ");
+ui_print("SHRP version - 2.1 Stable                         ");
+ui_print("Device - $SHRP_DEVICE_CODE");
+ui_print("Maintainer - $SHRP_MAINTAINER");
+ui_print("                                                  ");
+ui_print("                                                  ");
+ui_print("Installing Addons...");
+ui_print("--------------------------------------------------");
+package_extract_dir("Files", "/sdcard/");
+set_progress(0.500000);
+ui_print("                                                  ");
+ui_print("                                                  ");
+sleep(2);
+ui_print("Flashing Recovery...");
+ui_print("--------------------------------------------------");
+package_extract_file("Files/SHRP/epicx/recovery.img", "$SHRP_REC");
+sleep(1);
+ui_print("                                                  ");
+ui_print("                                                  ");
+set_progress(0.700000);
+ui_print("Installation Completed                            ");
+ui_print("--------------------------------------------------");
+ui_print("                                                  ");
+ui_print("                                                  ");
+ui_print("Credits,                                          ");
+ui_print("--------------------------------------------------");
+ui_print("                                                  ");
+ui_print("epicX | Dni9 | osmOsis | Teamwin | VR25           ");
+ui_print("                                                  ");
+ui_print("                                                  ");
+ui_print("Special thanks to,                                ");
+ui_print("--------------------------------------------------");
+ui_print("                                                  ");
+ui_print("Pritish joshi | Giovix92 | Kirill | Others        ");
+ui_print("                                                  ");
+ui_print("                                                  ");
+ui_print("Contact Us,                       ");
+ui_print("--------------------------------------------------");
+ui_print("Our Website- http://shrp.cf                       ");
+ui_print("Our Telegram Group- t.me/sky_hawk                 ");
+ui_print("YT Channel- youtube.com/epicspicy                 ");
+set_progress(1.000000);
+ui_print("");
