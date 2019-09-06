@@ -131,3 +131,5 @@ ui_print("YT Channel- youtube.com/epicspicy                 ");
 set_progress(1.000000);
 ui_print("");
 EOF
+
+cp $(TOP_DIR)/build/shrp/c_ex_variables.xml $(TOP_DIR)/android/bootable/recovery/gui/theme/shrp_portrait_hdpi/
